@@ -1,0 +1,166 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+html{
+  box-sizing: border-box;
+}
+*, ::after, ::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+h1{
+  font-size: 40px;
+  margin: 4vw auto 1vw;
+}
+h1, h2{
+  font-weight: 400;
+  text-align: center;
+}
+h2{
+  margin-bottom: 30px;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+img{
+  max-width: 100%;
+}
+.visually-hidden{
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.header--background{
+  width: 900px;
+  position: absolute;
+  z-index: -1;
+}
+.big{
+  font-size: 70px;
+}
+.heading-description{
+  margin: -10px auto 120px;
+  font-size: 14px;
+}
+.header-top{
+  display: flex;
+  justify-content: space-between;
+}
+.logo, .login{
+  margin: 20px;
+}
+.login{
+  width: 120px;
+}
+li + li{
+  margin-left: 20px;
+}
+.header-bottom{
+  margin-bottom: 30px;
+}
+.header-bottom--nav{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.header-bottom--nav li{
+  border: 3px solid #fff;
+  padding: 10px 50px;
+}
+.main{
+  background-color: #f3f3f3;
+}
+.block-transition{
+  width: 900px;
+  height: 250px;
+  background: linear-gradient(15deg, #F3F3F3 50%, #000000 50%);
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.block-transition--right{
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px auto 10px;
+  padding: 20px;
+  font-size: 12px;
+  width: 900px;
+  z-index: 1;
+}
+.block-transition--left{
+  display: flex;
+  width: 900px;
+  justify-content: flex-start;
+  padding: 0 50px;
+}
+.articles{
+  padding: 20px;
+}
+.article{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.article-text{
+  flex: 0 0 50%;
+  width: 50%;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px 20px 0;
+}
+.article-text p{
+  margin-bottom: 30px;
+}
+.article-image{
+  flex: 0 0 50%;
+  width: 50%;
+}
+.news-list{
+  display: flex;
+  overflow: hidden;
+  background-color: #fff;
+}
+.news-1, .news-2, .news-3, .news-4{
+  margin: 10px;
+  flex: 0 0 22.8%;
+  width: 200px;
+  height: 300px;
+}
+.news-1{
+  background-image: url(../img/news-list-1.jpg);
+}
+.news-2{
+  background-image: url(../img/news-list-2.jpg);
+}
+.news-3{
+  background-image: url(../img/news-list-3.jpg);
+}
+.news-4{
+  background-image: url(../img/news-list-4.jpg);
+}
